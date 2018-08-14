@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/vue@2.0.1/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<script>
+		$(function(){
+			var vm = new Vue({
+				el:'#vm',
+				data:{
+					email:'',
+					name:''
+				}
+			});
+			window.vm = vm;
+		});
+	</script>
+	<form action="#" id='vm'>
+		<p><input type="text" v-model='email'></p>
+		<p><input type="text" v-model='name'></p>
+	</form>
+</body>
+</html>
